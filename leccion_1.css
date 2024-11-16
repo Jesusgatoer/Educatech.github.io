@@ -1,0 +1,152 @@
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Reinicio de márgenes y ajuste de tamaño */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evitar el desplazamiento horizontal */
+}
+
+/* Estilos para la barra superior */
+.barra-superior {
+    height: 11vh;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Estilos para el título */
+.titulo {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.titulo:hover {
+    color: #4CAF50; /* Cambia el color a verde */
+    text-decoration: none; /* Añade una línea de subrayado */
+}
+
+
+/* Estilos para los enlaces */
+.enlaces {
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+.enlaces a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.enlaces a:hover {
+    color: #4CAF50; /* Cambia a un color verde */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}
+
+
+/* contenido principal */
+
+
+.seccion {
+    width: 60vw;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+    left: 20vw;
+    top: 10vh;
+}
+h1, h2 {
+    color: #007bff;
+    text-align: center;
+}
+p, ul {
+    text-align: justify;
+    line-height: 1.6;
+}
+ul {
+    margin-left: 20px;
+}
+.ejemplo {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+
+/* Estilos del footer */
+footer {
+background-color: #333;
+color: white;
+padding: 20px 0;
+text-align: center;
+}
+
+.footer-content {
+display: flex;
+justify-content: space-between; /* Distribuye las secciones en izquierda, centro y derecha */
+align-items: flex-start;
+padding: 10px 20px;
+}
+
+.footer-section {
+flex: 1;
+text-align: left;
+margin: 0 10px;
+position: relative;
+left: 10vw;
+}
+
+.footer-section:first-child {
+text-align: left; /* Contacto alineado a la izquierda */
+}
+
+.footer-section:last-child {
+text-align: left; /* Síguenos alineado a la derecha */
+}
+
+/* Estilo para las listas de enlaces en columna */
+.footer-section a {
+display: block;
+color: #ccc;
+text-decoration: none;
+margin-bottom: 5px;
+}
+
+.footer-section a:hover {
+color: #fff;
+}
+
+/* Estilos para el texto inferior */
+.footer-bottom {
+font-size: 0.9em;
+margin-top: 20px;
+color: #ccc;
+}
+
+.footer-bottom a {
+color: #ccc;
+text-decoration: none;
+}
+
+.footer-bottom a:hover {
+color: #fff;
+}
+

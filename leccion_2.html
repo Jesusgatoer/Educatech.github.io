@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eductech</title>
+    <link rel="stylesheet" href="leccion_1.css">
+    <style>
+        /* Estilos del Quiz */
+.quiz-section {
+    max-width: 60vw; /* Máximo ancho de 60vw */
+    width: 100%; /* Ancho del 100% del contenedor padre */
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para preguntas */
+.question {
+    margin-bottom: 15px;
+}
+
+/* Estilo del resultado */
+#resultado {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Estilo del botón */
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto hover del botón */
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Efecto de clic */
+button:active {
+    transform: scale(0.95);
+}
+.examen{
+    width: 60vw;
+    position: relative;
+    left:20vw;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+    </style>
+ 
+    
+
+</head>
+<body>
+    <div class="barra-superior">
+        <a href="index.html" class="titulo">EducateTH</a>
+        <nav class="enlaces">
+            <a href="index.html">Inicio</a>
+            <a href="Lecciones.html">Lecciones</a>
+            <a href="Nosotros.html">Nosotros</a>
+            <a href="ayuda.html">Ayuda</a>
+        </nav>
+    </div>
+    <div class="seccion">
+        <h1>Enlaces Químicos</h1>
+        <p>Los enlaces químicos son las fuerzas que mantienen unidos a los átomos para formar moléculas y compuestos. Los átomos se enlazan entre sí para alcanzar la estabilidad, ya sea mediante la transferencia o el compartimiento de electrones. Los principales tipos de enlaces son el enlace iónico, el enlace covalente y el enlace metálico. Cada tipo de enlace tiene características específicas que influyen en las propiedades físicas y químicas de las sustancias formadas, como el punto de fusión, la solubilidad en agua, la conductividad eléctrica, la dureza, entre otras.</p>
+    
+        <h2>Conceptos Clave</h2>
+        <h3>Enlace Iónico:</h3>
+        <p>El enlace iónico ocurre cuando un átomo cede uno o más electrones a otro átomo, lo que da lugar a la formación de iones con cargas opuestas. Los átomos que pierden electrones se convierten en cationes (iones positivos), mientras que los átomos que ganan electrones se convierten en aniones (iones negativos). La atracción entre los iones con cargas opuestas mantiene unidos a los átomos. Este tipo de enlace es común entre elementos metálicos y no metálicos, como el sodio (Na) y el cloro (Cl) en el cloruro de sodio (NaCl).</p>
+        <p>El enlace iónico se caracteriza por su alta solubilidad en agua y su alto punto de fusión. Los compuestos iónicos, como las sales, tienen una estructura cristalina que permite que los iones se alineen de manera ordenada. A pesar de ser sólidos en condiciones normales, los compuestos iónicos pueden disolverse fácilmente en agua y conducir electricidad cuando están disueltos o fundidos.</p>
+    
+        <h3>Enlace Covalente:</h3>
+        <p>El enlace covalente se forma cuando dos átomos comparten uno o más pares de electrones para alcanzar la estabilidad, con el objetivo de completar su capa externa de electrones. Este tipo de enlace es común entre elementos no metálicos. En los enlaces covalentes, no se produce la transferencia de electrones, como en el enlace iónico, sino que los electrones se distribuyen de manera que ambos átomos puedan "compartir" electrones para cumplir con la regla del octeto, que establece que los átomos tienden a tener ocho electrones en su capa más externa.</p>
+        <p>Los compuestos con enlaces covalentes pueden ser moléculas pequeñas, como el agua (H₂O), o moléculas grandes como los polímeros. Dependiendo de la polaridad de los enlaces covalentes, los compuestos pueden ser solubles o insolubles en agua. Los enlaces covalentes no conducen electricidad, ya que no hay iones libres para transportar carga.</p>
+    
+        <h3>Enlace Metálico:</h3>
+        <p>El enlace metálico se forma entre átomos de metales. En este tipo de enlace, los electrones de valencia no están ligados a un solo átomo, sino que se mueven libremente a través de una "nube" de electrones. Esto crea una estructura que permite que los átomos se deslicen unos sobre otros, lo que da lugar a propiedades como la maleabilidad y la ductilidad. Además, la movilidad de los electrones libres es la causa de la alta conductividad eléctrica y térmica de los metales.</p>
+        <p>El enlace metálico es responsable de muchas propiedades de los metales, como su brillo metálico, su capacidad para conducir electricidad y su resistencia a la corrosión. Ejemplos de sustancias con enlace metálico son el cobre (Cu), el hierro (Fe) y el oro (Au), los cuales tienen aplicaciones industriales y tecnológicas gracias a estas propiedades.</p>
+    
+        <h2>Propiedades de los Enlaces Químicos</h2>
+        <ul>
+            <li><strong>Solubilidad:</strong> Los compuestos iónicos suelen ser solubles en agua debido a la interacción entre los iones y las moléculas de agua. Los compuestos covalentes polares también pueden disolverse en agua, mientras que los compuestos no polares generalmente no lo hacen.</li>
+            <li><strong>Punto de Fusión:</strong> Los compuestos iónicos tienen altos puntos de fusión debido a la fuerte atracción electrostática entre los iones, lo que requiere más energía para separarlos. Los compuestos covalentes pueden tener puntos de fusión bajos, especialmente aquellos formados por moléculas pequeñas.</li>
+            <li><strong>Conductividad Eléctrica:</strong> Los compuestos iónicos no conducen electricidad en estado sólido, pero sí cuando están fundidos o disueltos en agua, ya que los iones se vuelven móviles. Los metales, debido a su estructura de electrones libres, son excelentes conductores de electricidad en estado sólido.</li>
+            <li><strong>Maleabilidad y Ductilidad:</strong> Los metales son maleables (pueden ser moldeados sin romperse) y ductiles (pueden estirarse en hilos) debido a la naturaleza del enlace metálico, que permite a los átomos deslizarse unos sobre otros sin romperse.</li>
+        </ul>
+    
+        <h2>Ejemplos Prácticos</h2>
+        <div class="ejemplo">
+            <p><strong>Ejemplo 1:</strong> ¿Qué tipo de enlace tiene el cloruro de sodio (NaCl)? <br> <strong>Respuesta:</strong> Enlace iónico. El sodio cede un electrón al cloro, formando iones de carga opuesta que se atraen entre sí.</p>
+            <p><strong>Ejemplo 2:</strong> ¿Qué tipo de enlace se encuentra en el dióxido de carbono (CO₂)? <br> <strong>Respuesta:</strong> Enlace covalente. Los átomos de carbono y oxígeno comparten electrones para formar la molécula.</p>
+            <p><strong>Ejemplo 3:</strong> ¿Por qué los metales son buenos conductores de electricidad? <br> <strong>Respuesta:</strong> Debido a los electrones libres en el enlace metálico, que permiten que la corriente eléctrica fluya fácilmente.</p>
+        </div>
+    </div>
+    <section class="examen">
+        <h2>Quiz de Enlaces Químicos</h2>
+        <form id="quiz-form">
+            <!-- Pregunta 1 -->
+            <div class="question">
+                <p><strong>1. ¿Qué tipo de enlace ocurre cuando un átomo cede electrones a otro?</strong></p>
+                <input type="radio" name="q1" value="ionico"> Enlace iónico<br>
+                <input type="radio" name="q1" value="covalente"> Enlace covalente<br>
+                <input type="radio" name="q1" value="metalico"> Enlace metálico<br>
+            </div>
+    
+            <!-- Pregunta 2 -->
+            <div class="question">
+                <p><strong>2. ¿Qué tipo de enlace es típico entre átomos de no metales?</strong></p>
+                <input type="radio" name="q2" value="ionico"> Enlace iónico<br>
+                <input type="radio" name="q2" value="covalente"> Enlace covalente<br>
+                <input type="radio" name="q2" value="metalico"> Enlace metálico<br>
+            </div>
+    
+            <!-- Pregunta 3 -->
+            <div class="question">
+                <p><strong>3. ¿Qué tipo de enlace permite la libre circulación de electrones, proporcionando conductividad eléctrica?</strong></p>
+                <input type="radio" name="q3" value="ionico"> Enlace iónico<br>
+                <input type="radio" name="q3" value="metalico"> Enlace metálico<br>
+                <input type="radio" name="q3" value="covalente"> Enlace covalente<br>
+            </div>
+    
+            <!-- Pregunta 4 -->
+            <div class="question">
+                <p><strong>4. ¿Cuál de los siguientes compuestos es un ejemplo de enlace covalente?</strong></p>
+                <input type="radio" name="q4" value="nacl"> NaCl (cloruro de sodio)<br>
+                <input type="radio" name="q4" value="h2o"> H₂O (agua)<br>
+                <input type="radio" name="q4" value="cu"> Cu (cobre)<br>
+            </div>
+    
+            <!-- Pregunta 5 -->
+            <div class="question">
+                <p><strong>5. ¿Qué tipo de enlace tiene lugar entre átomos metálicos?</strong></p>
+                <input type="radio" name="q5" value="ionico"> Enlace iónico<br>
+                <input type="radio" name="q5" value="metalico"> Enlace metálico<br>
+                <input type="radio" name="q5" value="covalente"> Enlace covalente<br>
+            </div>
+    
+            <button type="button" onclick="verificarRespuestas()">Verificar Respuestas</button>
+        </form>
+    
+        <div id="resultado"></div>
+    </section>
+    <script>
+        function verificarRespuestas() {
+            // Respuestas correctas
+            const respuestasCorrectas = {
+                q1: "ionico",
+                q2: "covalente",
+                q3: "metalico",
+                q4: "h2o",
+                q5: "metalico"
+            };
+    
+            let puntaje = 0;
+            const form = document.getElementById('quiz-form');
+            
+            // Verificar respuestas
+            for (let i = 1; i <= 5; i++) {
+                const respuestaSeleccionada = form[`q${i}`].value;
+                if (respuestaSeleccionada === respuestasCorrectas[`q${i}`]) {
+                    puntaje++;
+                }
+            }
+    
+            // Mostrar resultado
+            const resultadoDiv = document.getElementById('resultado');
+            resultadoDiv.textContent = `Tu puntaje es: ${puntaje} de 5`;
+        }
+    </script>
+    
+
+
+
+
+  
+
+
+
+   <footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Contacto</h3>
+            <p>Email: contacto@educateth.com</p>
+            <p>Teléfono: +57 314 789 0362</p>
+        </div>
+        <div class="footer-section">
+            <h3>Navegación</h3>
+            <a href="index.html">Inicio</a>
+            <a href="Lecciones.html">Lecciones</a>
+            <a href="Nosotros.html">Nosotros</a>
+            <a href="ayuda.html">Ayuda</a>
+        </div>
+        <div class="footer-section">
+            <h3>Síguenos</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            
+        </div>
+    </div>
+    <p class="footer-bottom">&copy; 2024 EducateTH. Todos los derechos reservados. | <a href="#">Política de privacidad</a> | <a href="#">Términos de uso</a></p>
+</footer>
+
+</body>
+</html>
+

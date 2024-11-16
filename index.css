@@ -1,0 +1,223 @@
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Reinicio de márgenes y ajuste de tamaño */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evitar el desplazamiento horizontal */
+}
+
+/* Estilos para la barra superior */
+.barra-superior {
+    height: 11vh;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Estilos para el título */
+.titulo {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.titulo:hover {
+    color: #4CAF50; /* Cambia el color a verde */
+    text-decoration: none; /* Añade una línea de subrayado */
+}
+
+/* Estilos para los enlaces */
+.enlaces {
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+.enlaces a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.enlaces a:hover {
+    color: #4CAF50; /* Cambia a un color verde */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}
+
+.section_info {
+    margin: 15vh 5vw 5vh; /* Espacio para evitar superposición con la barra superior */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.section_info h1 {
+    font-size: 2em;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.section_info p {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+}
+
+.section_info button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.section_info button:hover {
+    background-color: #45a049; /* Un tono más claro de verde */
+    transform: scale(1.05); /* Aumenta el tamaño del botón ligeramente */
+}
+
+
+/* Imagen dentro de la sección */
+.section_info img {
+    width: 80%;
+    max-width: 700px;
+    border-radius: 10px;
+}
+/* Estilos de la seccion 2 */
+.benefits-section {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+.benefits-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.benefits-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.benefit-box {
+    width: 30%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.benefit-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.benefit-icon {
+    width: 80px; /* Ajusta el tamaño según tus imágenes */
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.benefit-box img{
+    width: 80%;
+    max-width: 700px;
+    border-radius: 10px;
+
+}
+
+.benefit-box h3 {
+    color: #45a049;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.benefit-box p {
+    font-size: 16px;
+    color: #555;
+}
+
+
+/* Estilos del footer */
+footer {
+background-color: #333;
+color: white;
+padding: 20px 0;
+text-align: center;
+}
+
+.footer-content {
+display: flex;
+justify-content: space-between; /* Distribuye las secciones en izquierda, centro y derecha */
+align-items: flex-start;
+padding: 10px 20px;
+}
+
+.footer-section {
+flex: 1;
+text-align: left;
+margin: 0 10px;
+position: relative;
+left: 10vw;
+}
+
+.footer-section:first-child {
+text-align: left; /* Contacto alineado a la izquierda */
+}
+
+.footer-section:last-child {
+text-align: left; /* Síguenos alineado a la derecha */
+}
+
+/* Estilo para las listas de enlaces en columna */
+.footer-section a {
+display: block;
+color: #ccc;
+text-decoration: none;
+margin-bottom: 5px;
+}
+
+.footer-section a:hover {
+color: #fff;
+}
+
+/* Estilos para el texto inferior */
+.footer-bottom {
+font-size: 0.9em;
+margin-top: 20px;
+color: #ccc;
+}
+
+.footer-bottom a {
+color: #ccc;
+text-decoration: none;
+}
+
+.footer-bottom a:hover {
+color: #fff;
+}
+

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eductech</title>
+    <link rel="stylesheet" href="leccion_1.css">
+    <style>
+        /* Estilos del Quiz */
+.quiz-section {
+    max-width: 60vw; /* Máximo ancho de 60vw */
+    width: 100%; /* Ancho del 100% del contenedor padre */
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para preguntas */
+.question {
+    margin-bottom: 15px;
+}
+
+/* Estilo del resultado */
+#resultado {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Estilo del botón */
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto hover del botón */
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Efecto de clic */
+button:active {
+    transform: scale(0.95);
+}
+.examen{
+    width: 60vw;
+    position: relative;
+    left:20vw;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+    </style>
+ 
+    
+
+</head>
+<body>
+    <div class="barra-superior">
+        <a href="index.html" class="titulo">EducateTH</a>
+        <nav class="enlaces">
+            <a href="index.html">Inicio</a>
+            <a href="Lecciones.html">Lecciones</a>
+            <a href="Nosotros.html">Nosotros</a>
+            <a href="ayuda.html">Ayuda</a>
+        </nav>
+    </div>
+    <div class="seccion">
+        <h1>Ecuaciones de Primer Grado</h1>
+        <p>Las ecuaciones de primer grado son aquellas ecuaciones algebraicas en las que la incógnita tiene un exponente de 1. Estas ecuaciones se caracterizan por tener una sola variable y pueden resolverse aplicando principios aritméticos y algebraicos básicos. Son fundamentales en las matemáticas, ya que son la base para el aprendizaje de ecuaciones más complejas. Resolver ecuaciones de primer grado implica despejar la variable para encontrar su valor, y esto puede lograrse a través de diversas técnicas como la adición, la sustracción, la multiplicación o la división de ambos lados de la ecuación.</p>
+        
+        <h2>Conceptos Clave</h2>
+        <h3>Ecuación Lineal:</h3>
+        <p>Una ecuación lineal de primer grado es una expresión algebraica en la que la variable aparece elevada solo a la potencia 1. En su forma general, estas ecuaciones se presentan como <strong>ax + b = 0</strong>, donde <strong>a</strong> y <strong>b</strong> son números reales y <strong>x</strong> es la variable. El objetivo al resolver una ecuación lineal es encontrar el valor de la variable que hace que la ecuación sea verdadera.</p>
+        
+        <h3>Propiedades de las Ecuaciones de Primer Grado:</h3>
+        <p>Las ecuaciones de primer grado tienen varias propiedades que facilitan su resolución. Una de las principales es que si se aplican operaciones equivalentes (sumar, restar, multiplicar o dividir ambos lados de la ecuación por el mismo número, excepto por cero), el valor de la incógnita no cambia. Estas operaciones permiten simplificar la ecuación hasta obtener una expresión en la que la variable esté despejada.</p>
+    
+        <h3>Resolución de Ecuaciones de Primer Grado:</h3>
+        <p>Para resolver una ecuación de primer grado, se deben realizar una serie de pasos para despejar la variable. Por ejemplo, si tenemos la ecuación <strong>2x + 3 = 7</strong>, primero restamos 3 a ambos lados para obtener <strong>2x = 4</strong>, luego dividimos ambos lados por 2, obteniendo <strong>x = 2</strong>.</p>
+    
+        <h2>Ejemplos Prácticos</h2>
+        <div class="ejemplo">
+            <p><strong>Ejemplo 1:</strong> Resuelve la ecuación <strong>3x - 5 = 10</strong>. <br> <strong>Solución:</strong> Primero, sumamos 5 a ambos lados: <strong>3x = 15</strong>, luego dividimos entre 3: <strong>x = 5</strong>.</p>
+            <p><strong>Ejemplo 2:</strong> Resuelve la ecuación <strong>4x + 7 = 19</strong>. <br> <strong>Solución:</strong> Primero, restamos 7 a ambos lados: <strong>4x = 12</strong>, luego dividimos entre 4: <strong>x = 3</strong>.</p>
+            <p><strong>Ejemplo 3:</strong> Resuelve la ecuación <strong>5x - 2 = 3x + 6</strong>. <br> <strong>Solución:</strong> Primero, restamos 3x de ambos lados: <strong>2x - 2 = 6</strong>, luego sumamos 2 a ambos lados: <strong>2x = 8</strong>, finalmente dividimos entre 2: <strong>x = 4</strong>.</p>
+        </div>
+    </div>
+    <section class="examen">
+        <h2>Quiz de Ecuaciones de Primer Grado</h2>
+        <form id="quiz-form">
+            <!-- Pregunta 1 -->
+            <div class="question">
+                <p><strong>1. ¿Qué tipo de ecuación es <strong>2x + 4 = 10</strong>?</strong></p>
+                <input type="radio" name="q1" value="lineal"> Ecuación lineal<br>
+                <input type="radio" name="q1" value="cuadratica"> Ecuación cuadrática<br>
+                <input type="radio" name="q1" value="exponencial"> Ecuación exponencial<br>
+            </div>
+    
+            <!-- Pregunta 2 -->
+            <div class="question">
+                <p><strong>2. ¿Cuál es el valor de <strong>x</strong> en la ecuación <strong>3x - 7 = 11</strong>?</strong></p>
+                <input type="radio" name="q2" value="1"> x = 1<br>
+                <input type="radio" name="q2" value="6"> x = 6<br>
+                <input type="radio" name="q2" value="6.5"> x = 6.5<br>
+            </div>
+    
+            <!-- Pregunta 3 -->
+            <div class="question">
+                <p><strong>3. ¿Qué operación se debe realizar primero para resolver la ecuación <strong>5x + 3 = 18</strong>?</strong></p>
+                <input type="radio" name="q3" value="restar"> Restar 3 de ambos lados<br>
+                <input type="radio" name="q3" value="sumar"> Sumar 3 a ambos lados<br>
+                <input type="radio" name="q3" value="multiplicar"> Multiplicar ambos lados por 5<br>
+            </div>
+    
+            <!-- Pregunta 4 -->
+            <div class="question">
+                <p><strong>4. ¿Cuál es la solución de la ecuación <strong>7x - 4 = 24</strong>?</strong></p>
+                <input type="radio" name="q4" value="x10"> x = 10<br>
+                <input type="radio" name="q4" value="x2"> x = 2<br>
+                <input type="radio" name="q4" value="x5"> x = 5<br>
+            </div>
+    
+            <!-- Pregunta 5 -->
+            <div class="question">
+                <p><strong>5. ¿Cuál es el valor de <strong>x</strong> en la ecuación <strong>4x = 20</strong>?</strong></p>
+                <input type="radio" name="q5" value="5"> x = 5<br>
+                <input type="radio" name="q5" value="20"> x = 20<br>
+                <input type="radio" name="q5" value="4"> x = 4<br>
+            </div>
+    
+            <button type="button" onclick="verificarRespuestas()">Verificar Respuestas</button>
+        </form>
+    
+        <div id="resultado"></div>
+    </section>
+    <script>
+        function verificarRespuestas() {
+            // Respuestas correctas
+            const respuestasCorrectas = {
+                q1: "lineal",
+                q2: "6",
+                q3: "restar",
+                q4: "x5",
+                q5: "5"
+            };
+    
+            let puntaje = 0;
+            const form = document.getElementById('quiz-form');
+    
+            // Verificar respuestas
+            for (let i = 1; i <= 5; i++) {
+                const respuestaSeleccionada = form[`q${i}`].value;
+                if (respuestaSeleccionada === respuestasCorrectas[`q${i}`]) {
+                    puntaje++;
+                }
+            }
+    
+            // Mostrar resultado
+            const resultadoDiv = document.getElementById('resultado');
+            resultadoDiv.textContent = `Tu puntaje es: ${puntaje} de 5`;
+        }
+    </script>
+    
+
+
+
+
+  
+
+
+
+   <footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Contacto</h3>
+            <p>Email: contacto@educateth.com</p>
+            <p>Teléfono: +57 314 789 0362</p>
+        </div>
+        <div class="footer-section">
+            <h3>Navegación</h3>
+            <a href="index.html">Inicio</a>
+            <a href="Lecciones.html">Lecciones</a>
+            <a href="Nosotros.html">Nosotros</a>
+            <a href="ayuda.html">Ayuda</a>
+        </div>
+        <div class="footer-section">
+            <h3>Síguenos</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            
+        </div>
+    </div>
+    <p class="footer-bottom">&copy; 2024 EducateTH. Todos los derechos reservados. | <a href="#">Política de privacidad</a> | <a href="#">Términos de uso</a></p>
+</footer>
+
+</body>
+</html>
+

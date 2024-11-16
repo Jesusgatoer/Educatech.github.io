@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eductech</title>
+    <link rel="stylesheet" href="leccion_1.css">
+    <style>
+        /* Estilos del Quiz */
+.quiz-section {
+    max-width: 60vw; /* Máximo ancho de 60vw */
+    width: 100%; /* Ancho del 100% del contenedor padre */
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para preguntas */
+.question {
+    margin-bottom: 15px;
+}
+
+/* Estilo del resultado */
+#resultado {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Estilo del botón */
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto hover del botón */
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Efecto de clic */
+button:active {
+    transform: scale(0.95);
+}
+.examen{
+    width: 60vw;
+    position: relative;
+    left:20vw;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+    </style>
+ 
+    
+
+</head>
+<body>
+    <div class="barra-superior">
+        <a href="index.html" class="titulo">EducateTH</a>
+        <nav class="enlaces">
+            <a href="index.html">Inicio</a>
+            <a href="Lecciones.html">Lecciones</a>
+            <a href="Nosotros.html">Nosotros</a>
+            <a href="ayuda.html">Ayuda</a>
+        </nav>
+    </div>
+    <div class="seccion">
+        <h1>Geometría Básica</h1>
+        <p>La geometría es una rama fundamental de las matemáticas que se centra en el estudio de las propiedades y relaciones de puntos, líneas, planos, superficies, ángulos y figuras tanto en el espacio como en el plano. Desde tiempos antiguos, la geometría ha sido una herramienta esencial en diversas disciplinas, como la arquitectura, la ingeniería y la astronomía. Esta lección te guiará a través de los conceptos básicos, ayudándote a construir una base sólida para comprender temas geométricos más avanzados.</p>
+
+        <h2>Conceptos Clave</h2>
+        <h3>Punto:</h3>
+        <p>Un punto es una posición exacta en el espacio sin dimensiones (no tiene ancho, largo ni altura). Los puntos son los elementos más básicos en geometría y se representan generalmente con letras mayúsculas (A, B, C). Ejemplo: El punto A en el plano cartesiano puede tener coordenadas (3, 2).</p>
+
+        <h3>Línea:</h3>
+        <p>Una línea es una sucesión infinita de puntos en una misma dirección. Puede ser recta, curva o poligonal. Las líneas se representan con letras minúsculas (l, m) o usando dos puntos que la definen (AB). En geometría, una línea recta se extiende infinitamente en ambas direcciones, mientras que un segmento tiene un punto de inicio y un punto final.</p>
+
+        <h3>Plano:</h3>
+        <p>Un plano es una superficie bidimensional que se extiende infinitamente en todas las direcciones. Se representa con letras griegas (α, β) o con tres puntos no colineales (ABC). Ejemplo: El plano XY en un sistema cartesiano representa el plano bidimensional donde se pueden graficar figuras como círculos y triángulos.</p>
+
+        <h3>Segmento:</h3>
+        <p>Es una porción finita de una línea delimitada por dos puntos, llamados extremos. A diferencia de una línea, un segmento no se extiende indefinidamente.</p>
+
+        <h3>Ángulo:</h3>
+        <p>Es la apertura formada por dos líneas o segmentos que comparten un punto en común llamado vértice. Los ángulos se miden en grados (°) o radianes. Ejemplo: Un ángulo de 90° se conoce como ángulo recto y es común en figuras como el cuadrado y el rectángulo.</p>
+
+        <h2>Propiedades de los Ángulos</h2>
+        <ul>
+            <li><strong>Ángulo agudo:</strong> Mide menos de 90°.</li>
+            <li><strong>Ángulo recto:</strong> Mide exactamente 90°.</li>
+            <li><strong>Ángulo obtuso:</strong> Mide más de 90° pero menos de 180°.</li>
+            <li><strong>Ángulo llano:</strong> Mide exactamente 180°.</li>
+            <li><strong>Ángulo completo:</strong> Mide 360°.</li>
+        </ul>
+        <p>Los ángulos también pueden formar relaciones especiales como:</p>
+        <ul>
+            <li><strong>Ángulos complementarios:</strong> Dos ángulos que suman 90°.</li>
+            <li><strong>Ángulos suplementarios:</strong> Dos ángulos que suman 180°.</li>
+            <li><strong>Ángulos opuestos por el vértice:</strong> Son ángulos formados cuando dos líneas se intersectan, siendo siempre iguales.</li>
+        </ul>
+
+        <h2>Figuras Geométricas Básicas</h2>
+        <ul>
+            <li><strong>Triángulo:</strong> Figura con tres lados y tres ángulos.
+                <ul>
+                    <li><strong>Equilátero:</strong> Todos sus lados y ángulos son iguales.</li>
+                    <li><strong>Isósceles:</strong> Tiene dos lados iguales y dos ángulos iguales.</li>
+                    <li><strong>Escaleno:</strong> Todos sus lados y ángulos son diferentes.</li>
+                </ul>
+            </li>
+            <li><strong>Cuadrado:</strong> Figura con cuatro lados iguales y cuatro ángulos rectos.</li>
+            <li><strong>Rectángulo:</strong> Figura con cuatro lados y cuatro ángulos rectos. Los lados opuestos son iguales.</li>
+            <li><strong>Círculo:</strong> Figura cerrada en la que todos los puntos están a la misma distancia del centro.</li>
+        </ul>
+
+        <h2>Ejemplos Prácticos</h2>
+        <div class="ejemplo">
+            <p><strong>Ejemplo 1:</strong> Si tienes un ángulo de 45°, ¿qué tipo de ángulo es? <br> <strong>Respuesta:</strong> Es un ángulo agudo.</p>
+            <p><strong>Ejemplo 2:</strong> ¿Cuánto mide el ángulo de un triángulo equilátero? <br> <strong>Respuesta:</strong> En un triángulo equilátero, cada ángulo mide 60°.</p>
+            <p><strong>Ejemplo 3:</strong> Si tienes dos ángulos de 30° y 60°, ¿son complementarios o suplementarios? <br> <strong>Respuesta:</strong> Son complementarios, porque suman 90°.</p>
+        </div>
+    </div>
+
+
+    <section class="examen">
+    <h2>Quiz de Geometría Básica</h2>
+    <form id="quiz-form">
+        <!-- Pregunta 1 -->
+        <div class="question">
+            <p><strong>1. ¿Qué tipo de ángulo mide exactamente 90°?</strong></p>
+            <input type="radio" name="q1" value="agudo"> Ángulo agudo<br>
+            <input type="radio" name="q1" value="recto"> Ángulo recto<br>
+            <input type="radio" name="q1" value="obtuso"> Ángulo obtuso<br>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="question">
+            <p><strong>2. ¿Cuál es la figura geométrica que tiene todos sus lados y ángulos iguales?</strong></p>
+            <input type="radio" name="q2" value="triangulo_escaleno"> Triángulo escaleno<br>
+            <input type="radio" name="q2" value="rectangulo"> Rectángulo<br>
+            <input type="radio" name="q2" value="cuadrado"> Cuadrado<br>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="question">
+            <p><strong>3. Si dos ángulos suman 180°, se llaman:</strong></p>
+            <input type="radio" name="q3" value="complementarios"> Ángulos complementarios<br>
+            <input type="radio" name="q3" value="suplementarios"> Ángulos suplementarios<br>
+            <input type="radio" name="q3" value="agudos"> Ángulos agudos<br>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="question">
+            <p><strong>4. ¿Cuál de las siguientes figuras es un polígono con tres lados?</strong></p>
+            <input type="radio" name="q4" value="circulo"> Círculo<br>
+            <input type="radio" name="q4" value="triangulo"> Triángulo<br>
+            <input type="radio" name="q4" value="cuadrado"> Cuadrado<br>
+        </div>
+
+        <!-- Pregunta 5 -->
+        <div class="question">
+            <p><strong>5. ¿Cómo se llama el punto común donde se unen dos lados de un ángulo?</strong></p>
+            <input type="radio" name="q5" value="vertice"> Vértice<br>
+            <input type="radio" name="q5" value="plano"> Plano<br>
+            <input type="radio" name="q5" value="segmento"> Segmento<br>
+        </div>
+
+        <button type="button" onclick="verificarRespuestas()">Verificar Respuestas</button>
+    </form>
+
+    <div id="resultado"></div>
+    </div>
+    </section>
+    
+   
+    
+    <script>
+        // Función para abrir el modal del cuestionario
+        function verificarRespuestas() {
+        // Respuestas correctas
+        const respuestasCorrectas = {
+            q1: "recto",
+            q2: "cuadrado",
+            q3: "suplementarios",
+            q4: "triangulo",
+            q5: "vertice"
+        };
+
+        let puntaje = 0;
+        const form = document.getElementById('quiz-form');
+        
+        // Verificar respuestas
+        for (let i = 1; i <= 5; i++) {
+            const respuestaSeleccionada = form[`q${i}`].value;
+            if (respuestaSeleccionada === respuestasCorrectas[`q${i}`]) {
+                puntaje++;
+            }
+        }
+
+        // Mostrar resultado
+        const resultadoDiv = document.getElementById('resultado');
+        resultadoDiv.textContent = `Tu puntaje es: ${puntaje} de 5`;
+    }
+    </script>
+    
+    
+
+
+
+
+  
+
+
+
+   <footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Contacto</h3>
+            <p>Email: contacto@educateth.com</p>
+            <p>Teléfono: +57 314 789 0362</p>
+        </div>
+        <div class="footer-section">
+            <h3>Navegación</h3>
+            <a href="index.html">Inicio</a>
+            <a href="Lecciones.html">Lecciones</a>
+            <a href="Nosotros.html">Nosotros</a>
+            <a href="ayuda.html">Ayuda</a>
+        </div>
+        <div class="footer-section">
+            <h3>Síguenos</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            
+        </div>
+    </div>
+    <p class="footer-bottom">&copy; 2024 EducateTH. Todos los derechos reservados. | <a href="#">Política de privacidad</a> | <a href="#">Términos de uso</a></p>
+</footer>
+
+</body>
+</html>
+

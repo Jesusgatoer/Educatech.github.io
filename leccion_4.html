@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eductech</title>
+    <link rel="stylesheet" href="leccion_1.css">
+    <style>
+        /* Estilos del Quiz */
+.quiz-section {
+    max-width: 60vw; /* Máximo ancho de 60vw */
+    width: 100%; /* Ancho del 100% del contenedor padre */
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para preguntas */
+.question {
+    margin-bottom: 15px;
+}
+
+/* Estilo del resultado */
+#resultado {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Estilo del botón */
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto hover del botón */
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Efecto de clic */
+button:active {
+    transform: scale(0.95);
+}
+.examen{
+    width: 60vw;
+    position: relative;
+    left:20vw;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+    </style>
+ 
+    
+
+</head>
+<body>
+    <div class="barra-superior">
+        <a href="index.html" class="titulo">EducateTH</a>
+        <nav class="enlaces">
+            <a href="index.html">Inicio</a>
+            <a href="Lecciones.html">Lecciones</a>
+            <a href="Nosotros.html">Nosotros</a>
+            <a href="ayuda.html">Ayuda</a>
+        </nav>
+    </div>
+    <div class="seccion">
+        <h1>Teología</h1>
+        <p>La teología es el estudio de lo divino, de Dios y de las creencias religiosas. A lo largo de la historia, la teología ha sido una disciplina fundamental para entender la naturaleza de la existencia humana, el propósito de la vida, y las creencias que gobiernan las distintas religiones. Los teólogos buscan comprender la relación entre el ser humano, Dios y el mundo, abordando temas como la salvación, la moral, el sufrimiento, y la naturaleza de la fe. La teología se divide en varias ramas, como la teología sistemática, la teología bíblica, la teología moral y la teología práctica, cada una con su propio enfoque y metodología.</p>
+    
+        <h2>Conceptos Clave</h2>
+        <h3>Teología Sistemática:</h3>
+        <p>La teología sistemática busca organizar y presentar de manera coherente las creencias centrales de una religión. En el cristianismo, esto incluye temas como la Trinidad, la naturaleza de Cristo, la creación, la salvación y la escatología. Los teólogos sistemáticos construyen doctrinas que explican de forma integral el mensaje de las escrituras y cómo se aplican a la vida de los creyentes.</p>
+        <p>Una de las principales preocupaciones de la teología sistemática es entender cómo los distintos aspectos de la fe se conectan entre sí. Por ejemplo, la doctrina de la creación debe integrarse con la doctrina de la providencia divina, y la teología de la salvación debe estar en armonía con la comprensión de la naturaleza humana.</p>
+    
+        <h3>Teología Bíblica:</h3>
+        <p>La teología bíblica se enfoca en estudiar las enseñanzas de la Biblia y cómo se desarrollan a lo largo de los diferentes libros y épocas. A diferencia de la teología sistemática, que busca organizar las doctrinas de la fe en un sistema coherente, la teología bíblica observa cómo se revelan y evolucionan las ideas a lo largo de las Escrituras.</p>
+        <p>Este enfoque permite a los teólogos comprender cómo los textos bíblicos se conectan entre sí y cómo los diferentes autores, en diferentes contextos históricos, trataban cuestiones similares. A través de la teología bíblica, se obtiene una visión más profunda de la revelación divina, tal como se presenta en la Biblia.</p>
+    
+        <h3>Teología Moral:</h3>
+        <p>La teología moral estudia las implicaciones éticas y morales de la fe. Se ocupa de cuestiones como el bien y el mal, la justicia, el pecado, la redención y la virtud. Los teólogos morales buscan aplicar los principios de la religión a la vida cotidiana, ayudando a los creyentes a tomar decisiones basadas en la voluntad de Dios.</p>
+        <p>La teología moral no solo aborda cuestiones individuales de comportamiento, sino que también trata sobre la justicia social, los derechos humanos, el cuidado de la creación y las relaciones interpersonales, todas ellas vistas a través de la luz de la revelación divina.</p>
+    
+        <h3>Teología Práctica:</h3>
+        <p>La teología práctica se ocupa de la aplicación concreta de la teología en la vida de la iglesia y la sociedad. Esto incluye la liturgia, la predicación, la pastoral y el trabajo misionero. Los teólogos prácticos se enfocan en cómo las creencias teológicas deben ser vividas y expresadas en la comunidad cristiana.</p>
+        <p>Los temas tratados en la teología práctica incluyen la organización de la iglesia, la formación de los ministros y líderes religiosos, y el cuidado pastoral de las personas. También se ocupa de la misión de la iglesia en el mundo, buscando maneras de compartir el mensaje cristiano de manera efectiva y transformadora.</p>
+    
+        <h2>Propiedades de la Teología</h2>
+        <ul>
+            <li><strong>Revelación:</strong> La teología se basa en la creencia de que Dios se revela a sí mismo a los seres humanos, ya sea a través de las escrituras sagradas, la creación, o la experiencia personal con lo divino. Los teólogos buscan interpretar y entender esta revelación para acercarse a la verdad de la existencia.</li>
+            <li><strong>Trascendencia:</strong> La teología también aborda el concepto de trascendencia, es decir, que Dios es más allá de la comprensión humana completa. La naturaleza de Dios es infinita, y los teólogos intentan comprender sus características y atributos dentro de los límites de la razón humana.</li>
+            <li><strong>Fe:</strong> La teología está profundamente vinculada a la fe. Los teólogos exploran cómo la fe influye en la comprensión humana de Dios y cómo las creencias religiosas se practican en la vida diaria. La fe no solo se refiere a la creencia intelectual, sino también a la confianza y la relación personal con lo divino.</li>
+            <li><strong>Moralidad:</strong> La teología tiene un componente moral importante, ya que establece principios éticos basados en las creencias religiosas. Esto guía a los individuos a vivir una vida conforme a los ideales y preceptos divinos, buscando el bien y la justicia.</li>
+        </ul>
+    
+        <h2>Ejemplos Prácticos</h2>
+        <div class="ejemplo">
+            <p><strong>Ejemplo 1:</strong> ¿Qué concepto teológico está relacionado con la salvación eterna del ser humano? <br> <strong>Respuesta:</strong> La escatología. La escatología se ocupa de los últimos tiempos y la vida después de la muerte, incluyendo la salvación, el juicio final y la resurrección de los muertos.</p>
+            <p><strong>Ejemplo 2:</strong> ¿Cómo la teología aborda la cuestión del sufrimiento humano? <br> <strong>Respuesta:</strong> La teología ofrece explicaciones sobre el sufrimiento humano en términos de pecado, pruebas divinas o como parte del plan de Dios para el crecimiento espiritual. Los teólogos exploran cómo el sufrimiento puede tener un propósito redentor.</p>
+            <p><strong>Ejemplo 3:</strong> ¿Qué dice la teología sobre la justicia social? <br> <strong>Respuesta:</strong> La teología cristiana aboga por la justicia social, basándose en principios de equidad, solidaridad y compasión, animando a los creyentes a trabajar por un mundo más justo y a defender a los más vulnerables.</p>
+        </div>
+    </div>
+    <section class="examen">
+        <h2>Quiz de Teología</h2>
+        <form id="quiz-form">
+            <!-- Pregunta 1 -->
+            <div class="question">
+                <p><strong>1. ¿Qué rama de la teología se enfoca en la organización y explicación coherente de las creencias religiosas?</strong></p>
+                <input type="radio" name="q1" value="sistematica"> Teología sistemática<br>
+                <input type="radio" name="q1" value="biblica"> Teología bíblica<br>
+                <input type="radio" name="q1" value="moral"> Teología moral<br>
+            </div>
+    
+            <!-- Pregunta 2 -->
+            <div class="question">
+                <p><strong>2. ¿Qué tipo de teología estudia cómo se revelan las enseñanzas divinas a través de las escrituras?</strong></p>
+                <input type="radio" name="q2" value="sistematica"> Teología sistemática<br>
+                <input type="radio" name="q2" value="biblica"> Teología bíblica<br>
+                <input type="radio" name="q2" value="practica"> Teología práctica<br>
+            </div>
+    
+            <!-- Pregunta 3 -->
+            <div class="question">
+                <p><strong>3. ¿Qué concepto teológico está relacionado con la redención del ser humano?</strong></p>
+                <input type="radio" name="q3" value="salvacion"> Salvación<br>
+                <input type="radio" name="q3" value="justicia"> Justicia<br>
+                <input type="radio" name="q3" value="fe"> Fe<br>
+            </div>
+    
+            <!-- Pregunta 4 -->
+            <div class="question">
+                <p><strong>4. ¿Qué concepto teológico se refiere a la vida después de la muerte?</strong></p>
+                <input type="radio" name="q4" value="escatologia"> Escatología<br>
+                <input type="radio" name="q4" value="salvacion"> Salvación<br>
+                <input type="radio" name="q4" value="moral"> Moralidad<br>
+            </div>
+    
+            <!-- Pregunta 5 -->
+            <div class="question">
+                <p><strong>5. ¿Qué rama de la teología se ocupa de la aplicación de los principios religiosos en la vida diaria?</strong></p>
+                <input type="radio" name="q5" value="practica"> Teología práctica<br>
+                <input type="radio" name="q5" value="moral"> Teología moral<br>
+                <input type="radio" name="q5" value="sistematica"> Teología sistemática<br>
+            </div>
+    
+            <button type="submit">Enviar respuestas</button>
+            <!-- Div para mostrar el resultado -->
+            <div id="resultado"></div>
+        </form>
+    </section>
+    <script>
+        function verificarRespuestas() {
+            // Respuestas correctas
+            const respuestasCorrectas = {
+                q1: "sistematica",
+                q2: "biblica",
+                q3: "salvacion",
+                q4: "escatologia",
+                q5: "practica"
+            };
+    
+            let puntaje = 0;
+            const form = document.getElementById('quiz-form');
+    
+            // Verificar respuestas
+            for (let i = 1; i <= 5; i++) {
+                const respuestaSeleccionada = form.querySelector(`input[name="q${i}"]:checked`);
+                if (respuestaSeleccionada && respuestaSeleccionada.value === respuestasCorrectas[`q${i}`]) {
+                    puntaje++;
+                }
+            }
+    
+            // Mostrar resultado
+            const resultadoDiv = document.getElementById('resultado');
+            resultadoDiv.textContent = `Tu puntaje es: ${puntaje} de 5`;
+        }
+    
+        // Para que el formulario no se recargue al enviarse
+        document.getElementById('quiz-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            verificarRespuestas();
+        });
+    </script>
+    
+    
+    
+  
+
+
+
+   <footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Contacto</h3>
+            <p>Email: contacto@educateth.com</p>
+            <p>Teléfono: +57 314 789 0362</p>
+        </div>
+        <div class="footer-section">
+            <h3>Navegación</h3>
+            <a href="index.html">Inicio</a>
+            <a href="Lecciones.html">Lecciones</a>
+            <a href="Nosotros.html">Nosotros</a>
+            <a href="ayuda.html">Ayuda</a>
+        </div>
+        <div class="footer-section">
+            <h3>Síguenos</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            
+        </div>
+    </div>
+    <p class="footer-bottom">&copy; 2024 EducateTH. Todos los derechos reservados. | <a href="#">Política de privacidad</a> | <a href="#">Términos de uso</a></p>
+</footer>
+
+</body>
+</html>
+
